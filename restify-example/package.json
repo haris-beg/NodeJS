@@ -1,0 +1,14 @@
+{
+  "name": "rest-api",
+  "version": "0.1.0",
+  "description": "http://techforgeek.com/2015/01/create-rest-api-using-node-js-mongoose-restify/",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "author": "Haris Beg",
+  "license": "ISC",
+  "dependencies": {
+    "mongoose": "^4.5.10",
+    "restify": "^4.1.1"
+  }
+}
