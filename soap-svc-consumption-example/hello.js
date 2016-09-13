@@ -10,8 +10,8 @@ function helloRoute() {
 
   // ALL REST endpoint - query params may or may not be populated
   hello.all('/', function(req, res) {
-    console.log(new Date(), 'In hello route GET / req.query=', req.query);
-    var world = req.query && req.query.hello ? req.query.hello : 'World';
+    console.log(new Date(), 'In hello route ALL / req.query=', req.query);
+    var barcode = req.query.barcode || req.body.barcode;
 
     // see http://expressjs.com/4x/api.html#res.json
     res.json({msg: 'Hello ' + world});
