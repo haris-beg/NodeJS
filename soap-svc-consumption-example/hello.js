@@ -2,10 +2,10 @@ var soap = require('soap');
 var express = require('express');
 //var bodyParser = require('body-parser');
 var cors = require('cors');
+var csv = require('csv');
 
 function helloRoute() {
   var hello = new express.Router();
-  hello.use(cors());
   //hello.use(bodyParser());
 
 
@@ -26,9 +26,15 @@ function helloRoute() {
             if (err) {
                 return res.status(500).json(err);
             }
-            else {
-                return res.json(result);
-            }
+            // now we have the response, but the webservice returns it as a CSV string. Let's use the parser
+            var responseAsCsv = result.GetProductResult;
+            csv.parse(responseAsCsv, {columns : true}, function(err, parsedResponse) {
+                if (err) {
+                    return res.status(500).json(err);
+                }
+                // finally, we're ready to return this back to the client.
+                return res.json(parsedResponse);
+            });
         });
     });
   });
