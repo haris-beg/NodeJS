@@ -1,0 +1,11 @@
+{
+  "name": "soap-svc-consumption-example",
+  "version": "1.0.0",
+  "description": "We’ll show how easy Node.js & some community plugins make integrating with this SOAP service.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
