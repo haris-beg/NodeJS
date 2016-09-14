@@ -4,7 +4,7 @@ var express = require('express');
 var cors = require('cors');
 var csv = require('csv');
 
-function helloRoute() {
+//function helloRoute() {
   var hello = new express.Router();
   //hello.use(bodyParser());
 
@@ -39,7 +39,7 @@ function helloRoute() {
     });
   });
 
-  return hello;
-}
+  //return hello;
+//}
 
-module.exports = helloRoute;
+module.exports = hello;
