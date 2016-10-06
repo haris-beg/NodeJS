@@ -19,3 +19,7 @@ var request = https.get("https://teamtreehouse.com/" + username + ".json", funct
 //Read the data
 //Parse the data
 //Print the data
+
+request.on("error", function (error) {
+    console.error(error.message);
+});
