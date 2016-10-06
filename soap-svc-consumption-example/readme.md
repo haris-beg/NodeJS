@@ -7,3 +7,5 @@ One of the pieces of this integration puzzle we’ll encounter today is somethin
 Developers often use a WSDL in conjunction with a UI tool like SoapUI, which illustrates how the service works.
 
 We’re going to load this WSDL into a Node.js SOAP client, but it helps to have a rough idea of how the service works first – what params it expects, and what the output will look like. SoapUI can help with this.
+
+http://developers.redhat.com/blog/2016/02/19/apps-101-an-absolute-beginners-guide-to-integrating-with-a-node-js-backend/
