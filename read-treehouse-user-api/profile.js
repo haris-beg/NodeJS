@@ -17,31 +17,35 @@ function printError(error) {
     console.error(error.message);
 }
 
-//Connect to the API URL (http://teamtreehouse.com/username.json)
-var request = https.get("https://teamtreehouse.com/" + username + ".json", function (response) {
-    var body = "";
-    //Read the data
-    response.on('data', function (chunk) {
-        body += chunk;
-    });
-    response.on('end', function () {
-        if (response.statusCode === 200) {
-            try {
-                var profile = JSON.parse(body);
-                printMessage(username, profile.badges.length, profile.points.JavaScript);
-            } catch (error) {
-                //Parse error
-                printError(error);
+function get(username) {
+    //Connect to the API URL (http://teamtreehouse.com/username.json)
+    var request = https.get("https://teamtreehouse.com/" + username + ".json", function (response) {
+        var body = "";
+        //Read the data
+        response.on('data', function (chunk) {
+            body += chunk;
+        });
+        response.on('end', function () {
+            if (response.statusCode === 200) {
+                try {
+                    //Parse the data
+                    var profile = JSON.parse(body);
+                    //Print the data
+                    printMessage(username, profile.badges.length, profile.points.JavaScript);
+                } catch (error) {
+                    //Parse error
+                    printError(error);
+                }
+            } else {
+                // Status code error
+                printError({message: "There was an error getting the profile for " + username +
+                ". (" + http.STATUS_CODES[response.statusCode] + ")"});
             }
-        } else {
-            // Status code error
-            printError({message: "There was an error getting the profile for " + username +
-            ". (" + http.STATUS_CODES[response.statusCode] + ")"});
-        }
+        });
     });
-    //Parse the data
-    //Print the data
-});
 
-//Connection error
-request.on("error", printError);
+    //Connection error
+    request.on("error", printError);
+}
+
+module.exports.get = get;
