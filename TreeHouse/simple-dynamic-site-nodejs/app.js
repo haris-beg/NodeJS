@@ -8,9 +8,10 @@
 var http = require("http");
 http.createServer(function (request, response) {
     response.writeHead(200, {'Content-Type': 'text/plain'});
-    response.write('This is before the end.\n');
-    response.end('Hello world\n');
-    response.write('This is after the end.');
+    setInterval(function () {
+        response.write(new Date() + "\n");
+    }, 1000);
+    //response.end('Hello world\n');
 }).listen(3000, '127.0.0.1');
 console.log('Server running at http://localhost:3000');
 
