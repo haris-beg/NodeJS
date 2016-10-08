@@ -12,7 +12,3 @@ http.createServer(function (request, response) {
     router.user(request, response);
 }).listen(3000);
 console.log('Server running at http://localhost:3000');
-
-// 4. A function that handles the reading of files and merge in values
-    // read from template file and get a string
-        // merge values into string
