@@ -26,7 +26,7 @@ function home(request, response) {
                 //console.log("postBody.toString() => " + postBody.toString());
                 var query = querystring.parse(postBody.toString());
                 //console.log("query.username = " + query.username);
-                response.write(query.username);
+                response.writeHead(303, {"Location": "/" + query.username});
                 response.end();
                 // redirect to /:username
             });
