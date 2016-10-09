@@ -23,12 +23,10 @@ function home(request, response) {
             //get the POST data from request body
             request.on("data", function (postBody) {
                 //extract the username
-                //console.log("postBody.toString() => " + postBody.toString());
                 var query = querystring.parse(postBody.toString());
-                //console.log("query.username = " + query.username);
+                // redirect to /:username
                 response.writeHead(303, {"Location": "/" + query.username});
                 response.end();
-                // redirect to /:username
             });
         }
     }
