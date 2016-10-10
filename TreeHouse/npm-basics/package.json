@@ -1,0 +1,14 @@
+{
+  "name": "npm-basics",
+  "version": "1.0.0",
+  "description": "https://teamtreehouse.com/library/npm-basics/installing-packages-with-npm/installing-local-packages",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bcryptjs": "^2.3.0"
+  }
+}
