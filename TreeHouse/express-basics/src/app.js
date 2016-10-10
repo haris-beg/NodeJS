@@ -9,6 +9,10 @@ app.get('/', function (req, res) {
     res.send("<h1>I love this course!</h1>");
 });
 
+app.get('/blog', function (req, res) {
+    res.send(posts);
+});
+
 app.listen(3000, function () {
     console.log("The front-end server is running on port 3000 ...");
 });
