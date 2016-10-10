@@ -9,6 +9,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "bcryptjs": "^2.3.0"
+    "bcryptjs": "^2.3.0",
+    "colors": "^1.1.2"
   }
 }
