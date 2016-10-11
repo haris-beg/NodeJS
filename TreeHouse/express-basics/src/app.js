@@ -20,7 +20,7 @@ app.get('/blog/:title?', function (req, res) {
     }
     else {
         var post = posts[title];
-        res.render('post');
+        res.render('post', {post: post});
     }
 });
 
