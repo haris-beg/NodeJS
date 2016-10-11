@@ -1,0 +1,58 @@
+[
+  {
+    "SurveyType": "PAM6",
+    "SurveyName": "PAM 6 Survey",
+    "SurveyQuestions":
+    [
+      {
+        "PA1": "question text",
+        "PA2": "question text",
+        "PA5": "question text",
+        "PA9": "question text",
+        "PA10": "question text",
+        "PA13": "question text"
+      }
+    ]
+  },
+  {
+    "SurveyType": "PAM10",
+    "SurveyName": "PAM 10 Survey",
+    "SurveyQuestions":
+    [
+      {
+        "PA1": "question text",
+        "PA2": "question text",
+        "PA4": "question text",
+        "PA5": "question text",
+        "PA6": "question text",
+        "PA7": "question text",
+        "PA10": "question text",
+        "PA11": "question text",
+        "PA12": "question text",
+        "PA13": "question text"
+      }
+    ]
+  },
+  {
+    "SurveyType": "PAM13",
+    "SurveyName": "PAM 13 Survey",
+    "SurveyQuestions":
+    [
+      {
+        "PA1": "question text",
+        "PA2": "question text",
+        "PA3": "question text",
+        "PA4": "question text",
+        "PA5": "question text",
+        "PA6": "question text",
+        "PA7": "question text",
+        "PA8": "question text",
+        "PA9": "question text",
+        "PA10": "question text",
+        "PA11": "question text",
+        "PA12": "question text",
+        "PA13": "question text"
+      }
+    ]
+  }
+]

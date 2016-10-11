@@ -1,0 +1,106 @@
+[
+  {
+    "SurveyResultID": 2988487848,
+    "MemberID": "12345678-00",
+    "SurveyDate": "2016-09-20",
+    "PAMLevel": "123",
+    "PAMScore": "345",
+    "SurveyType": "PAM10",
+    "UserID": "r625361",
+    "Responses":
+    [
+      {
+        "Question": "Question 1 text",
+        "Answer": "0"
+      },
+      {
+        "Question": "Question 2 text",
+        "Answer": "1"
+      },
+      {
+        "Question": "Question 3 text",
+        "Answer": "0"
+      },
+      {
+        "Question": "Question 4 text",
+        "Answer": "2"
+      },
+      {
+        "Question": "Question 5 text",
+        "Answer": "4"
+      },
+      {
+        "Question": "Question 6 text",
+        "Answer": "3"
+      },
+      {
+        "Question": "Question 7 text",
+        "Answer": "2"
+      },
+      {
+        "Question": "Question 8 text",
+        "Answer": "4"
+      },
+      {
+        "Question": "Question 9 text",
+        "Answer": "2"
+      },
+      {
+        "Question": "Question 10 text",
+        "Answer": "3"
+      }
+    ]
+  },
+  {
+    "SurveyResultID": 2988487849,
+    "MemberID": "21435678-01",
+    "SurveyDate": "2016-08-21",
+    "PAMLevel": "129",
+    "PAMScore": "348",
+    "SurveyType": "PAM10",
+    "UserID": "r625366",
+    "Responses":
+    [
+      {
+        "Question": "Question 1 text",
+        "Answer": "Answer 1 text"
+      },
+      {
+        "Question": "Question 2 text",
+        "Answer": "Answer 2 text"
+      },
+      {
+        "Question": "Question 3 text",
+        "Answer": "Answer 3 text"
+      },
+      {
+        "Question": "Question 4 text",
+        "Answer": "Answer 4 text"
+      },
+      {
+        "Question": "Question 5 text",
+        "Answer": "Answer 5 text"
+      },
+      {
+        "Question": "Question 6 text",
+        "Answer": "Answer 6 text"
+      },
+      {
+        "Question": "Question 7 text",
+        "Answer": "Answer 7 text"
+      },
+      {
+        "Question": "Question 8 text",
+        "Answer": "Answer 8 text"
+      },
+      {
+        "Question": "Question 9 text",
+        "Answer": "Answer 9 text"
+      },
+      {
+        "Question": "Question 10 text",
+        "Answer": "Answer 10 text"
+      }
+    ]
+  }
+]

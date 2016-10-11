@@ -1,0 +1,22 @@
+[
+  {
+    "Value": 0,
+    "Meaning": "N/A"
+  },
+  {
+    "Value": 1,
+    "Meaning": "Strongly Disagree"
+  },
+  {
+    "Value": 2,
+    "Meaning": "Disagree"
+  },
+  {
+    "Value": 3,
+    "Meaning": "Agree"
+  },
+  {
+    "Value": 4,
+    "Meaning": "Strongly Agree"
+  }
+]
