@@ -3,6 +3,11 @@
 var express = require('express');
 var posts = require('./mock/posts.json');
 
+// Common idiom in JS to turn an Object into an Array
+var postsLists = Object.keys(posts).map(function (value) {
+    return posts[value];
+})
+
 var app = express();
 
 app.use('/static', express.static(__dirname + '/public'));
@@ -18,7 +23,6 @@ app.get('/blog/:title?', function (req, res) {
     var title = req.params.title;
     if (title === undefined) {
         res.status(503);
-        res.send("This page is under construction!");
     }
     else {
         var post = posts[title] || {};
