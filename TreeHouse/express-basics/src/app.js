@@ -23,6 +23,7 @@ app.get('/blog/:title?', function (req, res) {
     var title = req.params.title;
     if (title === undefined) {
         res.status(503);
+        res.render('blog', {post: postsLists});
     }
     else {
         var post = posts[title] || {};
