@@ -30,6 +30,16 @@ app.get('/blog/:title?', function(req, res){
 	}
 });
 
+app.get('/posts', function (req, res) {
+	if (req.query.raw) {
+		// Return a hash object
+		res.json(posts);
+	} else {
+		// Return a list object
+		res.json(postsLists);
+	}
+});
+
 app.listen(3000, function() {
 	console.log("The frontend server is running on port 3000!");
 });
