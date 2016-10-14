@@ -8,13 +8,13 @@
 <body ng-app="todoListApp">
     <h1>My TODOs</h1>
 
-    <div class="list">
+    <div ng-controller="mainCtrl" class="list">
         <input type="checkbox"/>
         <label class="editing-label">A sample todo!</label>
         <input class="editing-label" type="text"/>
         <div class="actions">
             <a href="">edit</a>
-            <a href="">save</a>
+            <a href="" ng-click="helloWorld()">save</a>
             <a href="" class="delete">delete</a>
         </div>
     </div>
