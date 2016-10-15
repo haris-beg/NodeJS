@@ -9,13 +9,15 @@
     <h1>My TODOs</h1>
 
     <div ng-controller="mainCtrl" class="list">
-        <input ng-model="todo.completed" type="checkbox"/>
-        <label ng-hide="editing" class="editing-label" ng-click="helloWorld()">{{todo.name}}</label>
-        <input ng-show="editing" ng-model="todo.name" class="editing-label" type="text"/>
-        <div class="actions">
-            <a href="" ng-click="editing = !editing">edit</a>
-            <a href="" ng-click="helloWorld()">save</a>
-            <a href="" class="delete">delete</a>
+        <div ng-repeat="todo in todos">
+            <input ng-model="todo.completed" type="checkbox"/>
+            <label ng-hide="editing" class="editing-label" ng-click="helloWorld()">{{todo.name}}</label>
+            <input ng-show="editing" ng-model="todo.name" class="editing-label" type="text"/>
+            <div class="actions">
+                <a href="" ng-click="editing = !editing">edit</a>
+                <a href="" ng-click="helloWorld()">save</a>
+                <a href="" class="delete">delete</a>
+            </div>
         </div>
         {{todos}}
     </div>
