@@ -19,8 +19,8 @@ angular.module("todoListApp")
             // In real life, this should call an API that will delete the data from a DB
         };
 
-        this.saveTodo = function (todo) {
-            console.log("The " + todo.name + " todo has been saved!");
+        this.saveTodos = function (todos) {
+            console.log(todos.length + " todos have been saved!");
             // In real life, this should call an API that will save the data in a DB
         };
     });

@@ -20,8 +20,13 @@ angular.module('todoListApp')
         $scope.todos.splice(index, 1);
     };
 
-    $scope.saveTodo = function (todo, index) {
-        dataService.saveTodo(todo);
+    $scope.saveTodos = function () {
+        var filteredTodos = $scope.todos.filter(function (todo) {
+            if(todo.edited) {
+                return todo;
+            }
+        });
+        dataService.saveTodos(filteredTodos);
         // don't we need to something to $scope.todos here?
     };
 
