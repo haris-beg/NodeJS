@@ -30,6 +30,8 @@ angular.module("todoListApp", [])
         };
         
         this.getTodos = function(callback) {
+            // $http.get actually returns a promise
+            // and it can take a callback as a parameter
             $http.get('mock/todos.json')
                 .then(callback)
         }
