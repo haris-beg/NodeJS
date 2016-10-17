@@ -35,7 +35,7 @@ angular.module("todoListApp", [])
             // and it can take a callback as a parameter
             $http.get('mock/todos.json')
                 .then(callback)
-        }
+        };
 
         this.deleteTodo = function (todo) {
             console.log("The " + todo.name + " todo has been deleted!");
