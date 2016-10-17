@@ -12,6 +12,16 @@ angular.module("todoListApp", [])
             $scope.todos = response.data;
         });
 
+        $scope.deleteTodo = function (todo, index) {
+            dataService.deleteTodo(todo);
+            $scope.todos.splice(index, 1);
+        };
+
+        $scope.saveTodo = function (todo, index) {
+            dataService.saveTodo(todo);
+            // don't we need to something to $scope.todos here?
+        };
+
     })
     .service('dataService', function ($http) {
 
@@ -22,7 +32,16 @@ angular.module("todoListApp", [])
         this.getTodos = function(callback) {
             $http.get('mock/todos.json')
                 .then(callback)
-        };
+        }
 
+        this.deleteTodo = function (todo) {
+            console.log("The " + todo.name + " todo has been deleted!");
+            // In real life, this should call an API that will delete the data from a DB
+        };
+        
+        this.saveTodo = function (todo) {
+            console.log("The " + todo.name + " todo has been saved!");
+            // In real life, this should call an API that will save the data in a DB
+        };
     });
 
