@@ -5,13 +5,14 @@ angular.module("todoListApp", [])
             console.log("An input changed!");
         };
 
-        $scope.helloConsole = dataService.helloWorld;
+        $scope.helloWorld = dataService.helloWorld;
 
     })
     .service('dataService', function () {
 
         this.helloWorld = function () {
-            console.log('This is the data service's method!');
+            console.log("This is the data service's method!");
         };
+        
     });
 
