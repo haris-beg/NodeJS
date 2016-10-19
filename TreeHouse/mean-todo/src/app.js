@@ -8,7 +8,7 @@ var app = express();
 app.use('/', express.static('public'));
 
 app.get('/api/todos', function (req, res) {
-    res.send("These are the todos!");
+    res.json({todos: []});
 })
 
 app.listen(3000, function () {
