@@ -1,0 +1,15 @@
+{
+  "name": "mean-todo",
+  "version": "1.0.0",
+  "description": "https://teamtreehouse.com/library/building-a-mean-application/introduction-to-the-mean-stack/setting-up-an-express-application",
+  "main": "src/app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/haris-beg/NodeJS/tree/master/TreeHouse/mean-todo"
+  },
+  "author": "Haris Beg",
+  "license": "ISC"
+}
