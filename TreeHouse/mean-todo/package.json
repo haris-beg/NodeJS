@@ -11,5 +11,8 @@
     "url": "https://github.com/haris-beg/NodeJS/tree/master/TreeHouse/mean-todo"
   },
   "author": "Haris Beg",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.14.0"
+  }
 }
