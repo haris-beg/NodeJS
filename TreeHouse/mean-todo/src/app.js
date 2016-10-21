@@ -6,6 +6,7 @@ var router = require("./api");
 var app = express();
 
 require('./database');
+require('./seed');
 
 // serve the static (angular app) file from the public folder
 app.use('/', express.static('public'));
