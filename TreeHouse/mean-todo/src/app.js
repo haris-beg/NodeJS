@@ -2,6 +2,7 @@
 
 var express = require("express");
 var router = require("./api");
+var parser = require('body-parser');
 
 var app = express();
 
@@ -11,6 +12,7 @@ require('./seed');
 // serve the static (angular app) file from the public folder
 app.use('/', express.static('public'));
 
+app.use(parser.json());
 
 app.use('/api', router);
 
