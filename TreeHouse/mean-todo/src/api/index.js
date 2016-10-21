@@ -36,7 +36,7 @@ router.put('/todos/:id', function (req, res) {
     if (todo && todo._id !== id) {
         return res.status(500).json({err: "Id's don't match!"});
     }
-    Todo.findByIdAndUpdate(id, todo, function (err, todo) {
+    Todo.findByIdAndUpdate(id, todo, {new: true}, function (err, todo) {
         if (err) {
             return res.status(500).json({err: err.message});
         } else {
