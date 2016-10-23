@@ -1,0 +1,21 @@
+{
+  "name": "battleship-engine-testing",
+  "version": "1.0.0",
+  "description": "https://teamtreehouse.com/library/javascript-unit-testing/behavior-driven-development-with-mocha-chai/getting-started-with-mocha-and-chai",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/haris-beg/NodeJS/tree/master/TreeHouse/battleship-engine-testing"
+  },
+  "keywords": [
+    "unit",
+    "testing",
+    "mocha",
+    "chai"
+  ],
+  "author": "Haris Beg",
+  "license": "ISC"
+}
