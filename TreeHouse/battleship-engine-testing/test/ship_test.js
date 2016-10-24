@@ -107,8 +107,21 @@ describe('fire', function () {
         };
 
         fire(player, [9,9]);
-        
+
         expect(player.ships[0].damage).to.be.empty;
     });
 
+});
+
+describe('clone', function () {
+    var clone = require('../game_logic/ship_methods').clone;
+    it('some description string', function () {
+
+        // YOUR CODE HERE
+        var x = {
+            name: 'Haris'
+        };
+        expect(clone(x)).to.deep.equal(x);
+
+    })
 });

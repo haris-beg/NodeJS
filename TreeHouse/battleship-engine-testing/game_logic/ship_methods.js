@@ -29,6 +29,11 @@ function fire(player, coordinates) {
     }
 }
 
+function clone(objectForCloning) {
+    return Object.assign({}, objectForCloning);
+}
+
 module.exports.checkForShip = checkForShip;
 module.exports.damageShip = damageShip;
 module.exports.fire= fire;
+module.exports.clone = clone;
