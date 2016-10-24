@@ -46,6 +46,9 @@ describe('checkForShip', function () {
                 },
                 {
                     locations: [[1, 0], [1, 1]]
+                },
+                {
+                    locations: [[2, 0], [2, 1], [2, 2], [2, 3]]
                 }
             ]
         };
@@ -53,6 +56,7 @@ describe('checkForShip', function () {
         expect(checkForShip(player, [0, 0])).to.be.true;
         expect(checkForShip(player, [1, 0])).to.be.true;
         expect(checkForShip(player, [1, 1])).to.be.true;
+        expect(checkForShip(player, [2, 3])).to.be.true;
         expect(checkForShip(player, [9, 9])).to.be.false;
     });
 
