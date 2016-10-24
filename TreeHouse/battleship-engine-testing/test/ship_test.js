@@ -107,7 +107,7 @@ describe('fire', function () {
         };
 
         fire(player, [9,9]);
-9
+        
         expect(player.ships[0].damage).to.be.empty;
     });
 
